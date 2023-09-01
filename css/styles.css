@@ -49,32 +49,34 @@ a {
     text-decoration: none;
     color: inherit;
 }
-
 address {
     font-style: normal;
 }
+.container {
+    width: 1158px;
+    margin: 0 auto;
+}
 
-.main-header {
-    margin: 25px 0 0 156px;
+.header {
+    border-bottom: 1px solid var(--cornflower);
+    padding: 24px 0;
+    background: var(--white);
+}
+.main-header-container {
+    display: flex;
+    padding: 0 15px;
+    justify-content: space-between;
+}
+
+.nav-menu {
     display: inline-flex;
-
+    column-gap: 76px;
 }
 
-.main-header-nav {
-    display: inline-block;
-    align-items: center;
-    margin-bottom: 24px;
-}
-
-.nav-logo {
-    display: inline-block;
-    text-decoration: none;
-    margin-right: 73px;
-}
 
 .nav-list {
-    display: inline-block;
-    
+    display: inline-flex;
+    column-gap: 40px;
 }
 
 .nav-link {
@@ -85,44 +87,40 @@ address {
     /* 150% */
     letter-spacing: 0.32px;
 }
-.nav-list-menu {
-    display: inline-block;
-    margin-right: 40px;
-}
+
 
 .nav-link:hover, .address-link:hover {
     color:var(--ocean);
 }
 
-.main-header-address {
-    margin-left: 328px;
+.address-list {
+    display: flex;
+    column-gap: 40px;
+    position: relative;
+    margin-left: 332px;
 }
-.adress-list-item {
-    display: inline-block;
-    margin-right: 40px;
-}
+
 .address-link {
     color: var(--slate);
     font-size: 16px;
     line-height: 24px;
-     /* 150% */
     letter-spacing: 0.32px;
-    
-}
+}  
 
 .hero {
-    padding: 188px 472px 292px 472px;
     background-color: var(--navy-blue);
+    padding: 188px 472px 292px 472px;
+   
 }
 
 .hero-heading {
     font-size: 56px;
     line-height: 60px;
     letter-spacing: 1.12px;
-    text-align: center;
     color: var(--white);
-    /* padding: 188px 472px 292px 472px;
-    background-color: var(--navy-blue); */
+    height: 120px; 
+    width: 472px;
+    text-align: center;
 }
 
 .hero-button {
@@ -149,12 +147,13 @@ address {
     background-color: var(--ocean);
 }
 
+
+.section-features-container {
+    padding: 120px 0px;
+}
 .features-list {
     display: flex;
     column-gap: 24px;
-    margin-top: 120px;
-    margin-left: 156px;
-    margin-right: 156px;
 }
 
 .features-title, .team-name {
@@ -173,19 +172,20 @@ address {
     /* 150% */
     letter-spacing: 0.32px;
 }
-
-.gadgets-title, .team-title {
+.services-title {
+    margin-bottom: 73px;
+}
+.services-title, .team-title {
     color: var(--navy-blue);
     text-align: center;
     font-size: 36px;
     line-height: 40px;
     letter-spacing: 0.72px;
     text-transform: capitalize;
-    margin-top: 120px;
-    margin-bottom: 72px;
+ 
 }
 
-.gadgets-list-menu {
+.services-list-menu {
     display: flex;
     column-gap: 24px;
     justify-content: center;
@@ -193,25 +193,43 @@ address {
 
 .team {
     background-color: var(--cloud);
-    width: 1440px; 
-    height: 732px; 
-    top: 1548px;
-
+    padding: 120px 0px;
+    margin-top: 120px;
 }
 
 .team-title {
-    padding-top: 120px;
-}
+    margin-bottom: 73px;
+}   
 .team-list-menu {
     display: flex;
     column-gap: 24px;
-    justify-content: center;
-    margin-bottom: 120px;
+    text-align: center;
+
 }
 
-.team-list-item {
-    text-align: center;
+.footer-description {
+    color: var(--cloud);
+    font-size: 16px;
+    line-height: 24px;
+    /* 150% */
+    letter-spacing: 0.32px;
 }
+
+.footer {
+    background: var(--navy-blue);
+    padding: 101px 0px;
+}
+
+.footer-description {
+   margin-top: 17px;
+   font-size: 16px;
+   line-height: 24px;
+   letter-spacing: 2%;
+
+}
+
+ /* --WEBSTUDIO L O G O------ */
+
 .colored {
     color: var(--iris);
     font-family: Raleway;
@@ -237,41 +255,25 @@ address {
     font-family: Raleway;
     font-size: 18px;
     font-weight: 800;
-     line-height: 21px;
+    line-height: 21px;
     /* 116.667% */
     letter-spacing: 0.54px;
     text-transform: uppercase;
 }
-.footer-description {
-    color: var(--cloud);
-    font-size: 16px;
-    line-height: 24px;
-    /* 150% */
-    letter-spacing: 0.32px;
-}
-
-.main-footer {
-    background: var(--navy-blue);
-    width: 1440px;
-    height: 312px;
-    top: 2280px;
-    padding-top: 101px;
-    padding-left: 156px;
-}
-
-.main-footer-logo {
-    padding-top: 101px;
-}
-
-.header-page-link {
-    /* color: var(--slate); */
-}
 
 
-/* PORTFOLIO HTML*/
+/*------- PORTFOLIO HTML-----*/
 
 button {
     cursor: pointer;
+}
+.portfolio-button-list {
+    display: inline-flex;
+    column-gap: 24px;
+    align-items: center;
+    margin-top: 97px;
+    margin-bottom: 70px;
+   
 }
 
 .portfolio-button {
@@ -323,17 +325,30 @@ button {
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
+.project-list-item {
+    column-gap: 24px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+
 .project-title {
     color: var(--navy-blue);      
     font-size: 20px;
     font-weight: 500;
-    line-height: 24px;
     letter-spacing: 0.4px;
+    line-height: 24px;
+    margin-top:32px;
 }
 
 .project-description {
     color: var(--slate); 
     font-size: 16px;
-    line-height: 24px;
     letter-spacing: 0.32px;
+    line-height: 24px;
+    margin-bottom: 85px;
+    
 }

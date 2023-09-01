@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homework#2</title>
+    <title>Homework#3</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -21,9 +21,10 @@
 <body>
     <!--header section-->
 
-    <header class="main-header">
-        <nav class="nav">
-            <a class="nav-logo" href="/goit-markup-hw-02/portfolio.html" target="_blank"><span class="colored">WEB</span><span
+    <header class="header">
+        <div class="container main-header-container">
+            <nav class="nav-menu">
+            <a class="logo" href="/goit-markup-hw-03/portfolio.html" target="_blank"><span class="colored">WEB</span><span
                     class="black">STUDIO</span></a>
 
             <ul class="nav-list">
@@ -41,13 +42,14 @@
                 <li><a class="address-link" href="tel:+11(000)111-11-11">+11(000)111-11-11</a></li>
             </ul>
         </address>
+        </div>
     </header>
 
     <!--Link Button-->
 
     <main>
         <section class="section-portfolio">
-        
+            <div class=" container section-portfolio-container">
             <ul class="portfolio-button-list">
                 <li class="portfolio-link"><button class="blue" type="button">All</button></li>
                 <li class="portfolio-link"><button class="portfolio-button" type="button">Web Site</button></li>
@@ -55,11 +57,13 @@
                 <li class="portfolio-link"><button class="portfolio-button" type="button">Design</button></li>
                 <li class="portfolio-link"><button class="portfolio-button" type="button">Marketing</button></li>
             </ul>
+            </div>
         </section>
         
         <!--images-->
         <section class="project-card1">
-            <ul>
+            <div class="container project-card1-container">
+            <ul class="project-list-item">
                 <li><img src="images/img8.jpg" width="360" alt="banking">
                     <p class="project-title">Banking App Interface Concept<p>
                     <p class="project-description">App</p></li>
@@ -73,7 +77,7 @@
                     <p class="project-title">Taxi Service</p>
                     <p class="project-description">Marketing</p></li>
                 <li><img src="images/img12.jpg" width="360" alt="screen">
-                    <p class="project-title">Screen Illustrationa</p>
+                    <p class="project-title">Screen Illustrations</p>
                     <p class="project-description">Design</p></li>
                 <li><img src="images/img13.jpg" width="360" alt="online">
                     <p class="project-title">Online Courses</p>
@@ -89,14 +93,18 @@
                     <p class="project-description">Web Site</p></li>
             </ul>
         </section>
+    </div>
     </main>
 
     <!--Footer Section-->
-    <footer class="main-footer">
-        <a class="nav-logo" href="/goit-markup-hw-01/index.html" target="_blank"><span class="colored">WEB</span><span class="white">STUDIO</span></a>
-        <p class="footer-description">Increase the flow of customers and<br>
-            sales for your business with digital<br>
-            marketing & growth solutions.</p>
+    <footer class="footer">
+        <div class="container footer-section-container">
+            <a class="footer-logo" href="/goit-markup-hw-03/index.html" target="_blank"><span
+                    class="colored">WEB</span><span class="white">STUDIO</span></a>
+            <p class="footer-description">Increase the flow of customers and<br>
+                sales for your business with digital<br>
+                marketing & growth solutions.</p>
+        </div>
     </footer>
 </body>
 
