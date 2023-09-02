@@ -371,3 +371,6 @@ button {
     background: var(--WHITE, #FFF);
 }
 
+.project {
+    margin-top: 48px;
+}
