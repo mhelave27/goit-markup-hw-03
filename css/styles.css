@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 :root {
@@ -73,7 +74,6 @@ address {
     column-gap: 76px;
 }
 
-
 .nav-list {
     display: inline-flex;
     column-gap: 40px;
@@ -109,7 +109,7 @@ address {
 
 .hero {
     background-color: var(--navy-blue);
-    padding: 188px 472px 292px 472px;
+    padding: 188px 0;
    
 }
 
@@ -118,8 +118,7 @@ address {
     line-height: 60px;
     letter-spacing: 1.12px;
     color: var(--white);
-    height: 120px; 
-    width: 472px;
+    display: block;
     text-align: center;
 }
 
@@ -148,14 +147,16 @@ address {
 }
 
 
-.section-features-container {
+.features {
     padding: 120px 0px;
 }
 .features-list {
     display: flex;
     column-gap: 24px;
 }
-
+.features-title {
+    margin-bottom: 8px;
+}
 .features-title, .team-name {
     color: var(--navy-blue);
     font-size: 20px;
@@ -163,6 +164,7 @@ address {
     line-height: 24px;
     /* 120% */
     letter-spacing: 0.4px;
+    margin-bottom: 8px;
 }
 
 .features-description, .team-position {
@@ -171,6 +173,10 @@ address {
     line-height: 24px;
     /* 150% */
     letter-spacing: 0.32px;
+}
+
+.services {
+    padding-bottom: 120px;
 }
 .services-title {
     margin-bottom: 73px;
@@ -182,7 +188,6 @@ address {
     line-height: 40px;
     letter-spacing: 0.72px;
     text-transform: capitalize;
- 
 }
 
 .services-list-menu {
@@ -194,7 +199,6 @@ address {
 .team {
     background-color: var(--cloud);
     padding: 120px 0px;
-    margin-top: 120px;
 }
 
 .team-title {
@@ -205,6 +209,12 @@ address {
     column-gap: 24px;
     text-align: center;
 
+}
+.team-item-details {
+    padding: 32px 16px;
+    border-radius: 0px 0px 4px 4px;
+    background: var(--WHITE, #FFF);
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .footer-description {
@@ -267,12 +277,14 @@ address {
 button {
     cursor: pointer;
 }
+
+.section-portfolio {
+    padding: 96px 0 72px;
+}
 .portfolio-button-list {
-    display: inline-flex;
+    display: flex;
     column-gap: 24px;
-    align-items: center;
-    margin-top: 97px;
-    margin-bottom: 70px;
+    justify-content: center;
    
 }
 
@@ -325,15 +337,18 @@ button {
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
+.project-card1 {
+    padding-bottom: 96px;
+}
+
 .project-list-item {
     column-gap: 24px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
     justify-content: center;
 
 }
-
 
 .project-title {
     color: var(--navy-blue);      
@@ -341,7 +356,6 @@ button {
     font-weight: 500;
     letter-spacing: 0.4px;
     line-height: 24px;
-    margin-top:32px;
 }
 
 .project-description {
@@ -349,6 +363,11 @@ button {
     font-size: 16px;
     letter-spacing: 0.32px;
     line-height: 24px;
-    margin-bottom: 85px;
-    
 }
+
+.project-details {
+    padding: 32px 32px;
+    border: 1px solid var(--CORNFLOWER, #E7E9FC);
+    background: var(--WHITE, #FFF);
+}
+
